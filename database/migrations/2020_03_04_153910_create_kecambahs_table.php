@@ -17,9 +17,9 @@ class CreateKecambahsTable extends Migration
             $table->bigIncrements('kecambah_id');
             $table->string('nama');
             $table->string('pembeli');
-            $table->integer('jumlah');
-            $table->integer('harga');
-            $table->integer('jumlah_bayar');
+            $table->bigInteger('jumlah');
+            $table->bigInteger('harga');
+            $table->bigInteger('jumlah_bayar');
             $table->timestamps();
             $table->softDeletes();
         });
